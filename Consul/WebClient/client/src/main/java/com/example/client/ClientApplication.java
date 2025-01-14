@@ -17,9 +17,9 @@ public class ClientApplication {
     @Bean
     CommandLineRunner initializeH2Database(ClientRepository clientRepository) {
         return args -> {
-            clientRepository.save(new Client(Long.parseLong("1"), "Amine SAFI", Float.parseFloat("23")));
-            clientRepository.save(new Client(Long.parseLong("2"), "Amal ALAOUI", Float.parseFloat("22")));
-            clientRepository.save(new Client(Long.parseLong("3"), "Samir RAMI", Float.parseFloat("22")));
+            clientRepository.save(new Client(Long.parseLong("1"), "l", Float.parseFloat("23")));
+            clientRepository.save(new Client(Long.parseLong("2"), "Marie", Float.parseFloat("22")));
+            clientRepository.save(new Client(Long.parseLong("3"), "Assmi", Float.parseFloat("22")));
         };
     }
 }
